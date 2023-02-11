@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+     "target": "es2016",
+     "module": "CommonJS",
+     "typeRoots": ["src/@types", "node_modules/@tcdypes"],
+     "esModuleInterop": true,
+     "forceConsistentCasingInFileNames": true,
+     "strict": true,
+     "exactOptionalPropertyTypes": true
+   },
+   "include": ["src/*", "src/logic/*", "src/middlewares/*", "src/interfaces/*", "src/logic/insertQueryFormat.ts", "src/database/insertQuery.ts"],
+   "exclude": ["node_modules/"]
+ }
