@@ -8,6 +8,12 @@
      "strict": true,
      "exactOptionalPropertyTypes": true
    },
-   "include": ["src/*", "src/logic/*", "src/middlewares/*", "src/interfaces/*", "src/logic/insertQueryFormat.ts", "src/database/insertQuery.ts"],
+   "include": [
+      "src/*", 
+      "src/logic/*", 
+      "src/middlewares/*", 
+      "src/interfaces/*",
+      "src/logic/developers/*"
+  ],
    "exclude": ["node_modules/"]
  }

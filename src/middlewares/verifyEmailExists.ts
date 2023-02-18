@@ -2,7 +2,7 @@ import { NextFunction, Request, Response } from "express";
 import { QueryConfig, QueryResult } from "pg";
 import { client } from "../database/client";
 
-export async function validateEmailExists(req: Request, res: Response, next: NextFunction) {
+export async function verifyEmailExists(req: Request, res: Response, next: NextFunction) {
     const email: string = req.body.email;
 
     const queryString: string = `
