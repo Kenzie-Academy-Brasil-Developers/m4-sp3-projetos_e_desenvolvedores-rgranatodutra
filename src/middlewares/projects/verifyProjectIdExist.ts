@@ -4,7 +4,7 @@ import { client } from "../../database/client";
 import { Project } from "../../interfaces/projects";
 
 export async function verifyProjectIdExist(req: Request, res: Response, next: NextFunction): Promise<Response | void> {
-    const id: number = parseInt(req.params.projectId);
+    const id: string = req.params.projectId;
 
     const queryString: string = `
         SELECT * FROM 

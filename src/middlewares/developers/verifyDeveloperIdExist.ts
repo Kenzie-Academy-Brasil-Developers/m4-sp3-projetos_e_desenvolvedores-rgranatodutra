@@ -4,7 +4,7 @@ import { client } from "../../database/client";
 import { Developer } from "../../interfaces/developers";
 
 export async function verifyDeveloperIdExist(req: Request, res: Response, next: NextFunction) {
-    const id: number = parseInt(req.params.developerId);
+    const id: string = req.params.developerId;
 
     const queryString: string = `
         SELECT * FROM 
