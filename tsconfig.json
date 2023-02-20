@@ -11,9 +11,14 @@
    "include": [
       "src/*", 
       "src/logic/*", 
-      "src/middlewares/*", 
+      "src/middlewares/*",
+      "src/middlewares/developers/*",  
+      "src/middlewares/projects/*",  
       "src/interfaces/*",
-      "src/logic/developers/*"
-  ],
+      "src/logic/developers/*",
+      "src/logic/projects/*",
+      "src/scripts/*",
+      "@types/express/*"
+    ],
    "exclude": ["node_modules/"]
  }

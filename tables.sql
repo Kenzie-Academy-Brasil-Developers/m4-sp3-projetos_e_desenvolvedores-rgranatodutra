@@ -30,6 +30,7 @@ CREATE TABLE projects (
     FOREIGN KEY ("developerId") 
     REFERENCES developers(id)
     ON DELETE CASCADE
+    ON UPDATE CASCADE
 );
 
 CREATE TABLE technologies (
